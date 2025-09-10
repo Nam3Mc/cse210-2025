@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Fractions Project.");
+        InputTaker taker = new InputTaker();
+        taker.Menu();
     }
 }
+        
