@@ -1,9 +1,12 @@
-using System;
-
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello World! This is the Journal Project.");
+        int userInput = -1;
+        while (userInput != 5)
+        {
+            userInput = Menu.MenuOptions();
+            Menu.OptionsHandler(userInput);
+        }
     }
 }
