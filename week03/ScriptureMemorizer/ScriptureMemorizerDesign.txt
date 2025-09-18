@@ -1,0 +1,20 @@
+What does the program do?
+
+store scriptures with its reference both text and verses
+display all the information storaged 
+request pronps from user to either eexit or display the scripture changing some words to a string of _
+clean the screen when changing words to string of dashes 
+finished whne not more words can be hidden 
+
+What user inputs does it have?
+just 1 that could be either enter or queit 
+probabli needs to have the input for the scrioture
+its verses and references to setit as favorite 
+allow the user select one specific scripture to memorize
+
+What output does it produce?
+it needs to display the reference and the scripture, both in full and with the words hidden 
+a menu of actions to clietn for saving scriptures or pick up an specific scripture 
+
+How does the program end
+whent the scripture has all words hiden or when user input is = to queit
