@@ -25,6 +25,7 @@ public class Activity
             Console.Write(letter + " ");
             Thread.Sleep(5000 / 7);
         }
+        Console.WriteLine();
     }
     public void CountDown(int seconds)
     {
@@ -60,8 +61,9 @@ public class Activity
     }
     public void DisplayEndingMessage()
     {
-        Console.WriteLine("Well Done!! \n");
-        Console.WriteLine($"You have completed {_duration} seconds of the {_name} Activity. \n");
+        Console.WriteLine("\nWell Done!!");
+        LoadingMessage();
+        Console.WriteLine($"\nYou have completed {_duration} seconds of the {_name} Activity.");
         LoadingMessage();
     }
 }

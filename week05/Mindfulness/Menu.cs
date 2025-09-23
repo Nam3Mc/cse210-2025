@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 public class Menu
 {
     string answer = "";
@@ -7,12 +9,10 @@ public class Menu
         Console.WriteLine();
         Console.WriteLine("1. Breathing Activity");
         Console.WriteLine("2. Reflection Activity");
-        Console.WriteLine("3. Listing Activity");
-        Console.WriteLine();
-        Console.Write("Type you number option Or 'Q' to finish: ");
-        Console.WriteLine();
+        Console.WriteLine("3. Listing Activity \n");
+        Console.Write("Type you number option Or 'Q' to finish: \n");
     }
-    public void OptionHandler()
+    public async Task OptionHandler()
     {
         while (answer.ToUpper() != "Q")
         {
@@ -25,6 +25,7 @@ public class Menu
                 string description = "This activity will help you relax by walking your through breathing in and out slowly. \nClear your mind and focus on your breathing.\n";
                 BreathingActivity newActivity = new BreathingActivity(name, description);
                 newActivity.Run();
+                Console.Clear();
             }
             if (answerInt == 2)
             {
@@ -32,12 +33,14 @@ public class Menu
                 string name = "Reflecting";
                 ReflectingActivity newActivity = new ReflectingActivity(name, description);
                 newActivity.Run();}
+                Console.Clear();
             if (answerInt == 3)
             {
                 string description = "This activity will help you reflect in the good thins in your life by having you list as many things as can in a certain area.";
                 string name = "Listing";
                 ListingActivity newActivity = new ListingActivity(name, description);
                 newActivity.Run();
+                Console.Clear();
             }
         }
     }

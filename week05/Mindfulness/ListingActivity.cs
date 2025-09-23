@@ -46,19 +46,15 @@ public class ListingActivity : Activity
         {
             Task<string> inputTask = Task.Run(() => Console.ReadLine());
             if (Task.WhenAny(inputTask, Task.Delay(seconds * 1000)).Result == inputTask)
+            {
+                string response = inputTask.Result;
+                if (!string.IsNullOrWhiteSpace(response))
                 {
-                    string response = inputTask.Result;
-                    if (!string.IsNullOrWhiteSpace(response))
-                    {
                     count += 1;
-                    }
+                }
             }
         }
         Console.WriteLine($"You have provided {count} for this question");
-        string name = GetName();
-        GerReadyMessage("\nWell done!!", 5);
-        Console.WriteLine($"Youihave completed {time} seconds of the {name} Activity");
-        LoadingMessage();
-        Console.Clear();
+        DisplayEndingMessage();
     }
 }

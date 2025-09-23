@@ -56,10 +56,6 @@ public class BreathingActivity : Activity
             }
             Console.WriteLine();
         }
-        string name = GetName();
-        GerReadyMessage("\nWell done!!", 5);
-        Console.WriteLine($"Youihave completed {time} seconds of the {name} Activity");
-        LoadingMessage();
-        Console.Clear();
+        DisplayEndingMessage();
     }
 }
