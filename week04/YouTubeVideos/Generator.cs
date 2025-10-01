@@ -1,5 +1,4 @@
 using Newtonsoft.Json;
-
 public class Generator
 {
     public Video RandomVideo()

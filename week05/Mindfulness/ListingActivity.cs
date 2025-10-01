@@ -34,6 +34,7 @@ public class ListingActivity : Activity
         string time = Console.ReadLine();
         int seconds = newInput.InputHandler(time);
         int count = 0;
+        SetDuration(seconds);
         Console.Clear();
         GerReadyMessage("Get Ready!", 5);
         Console.WriteLine("List as many responses you can to the following prompt: ");
@@ -54,7 +55,7 @@ public class ListingActivity : Activity
                 }
             }
         }
-        Console.WriteLine($"You have provided {count} for this question");
+        Console.WriteLine($"You have provided {count} answers for this question");
         DisplayEndingMessage();
     }
 }

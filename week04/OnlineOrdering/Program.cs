@@ -6,7 +6,7 @@ class Program
     {
         Product p1 = new Product("Laptop", 1200.50f, 1);
         Product p2 = new Product("Mouse", 25.75f, 2);
-        Product p3 = new Product("Teclado", 55.30f, 1);
+        Product p3 = new Product("Keyboard", 55.30f, 1);
         List<Product> products = new List<Product> { p1, p2, p3 };
         Address address = new Address("123 Main Street", "New York", "NY", "45625", "USA");
         Customer customer = new Customer("John Doe", address);
