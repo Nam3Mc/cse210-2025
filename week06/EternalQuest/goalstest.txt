@@ -1,0 +1,4 @@
+15
+SimpleGoal~Push ups~complte 50 push ups~200~false
+EternalGoal~wake up early~wake up each day from 5 to 6 am~20~0
+ChecklistGoal~trade~complete just 3 trades wins~15~1~3~100
