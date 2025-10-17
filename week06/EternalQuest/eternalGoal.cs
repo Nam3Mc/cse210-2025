@@ -2,6 +2,10 @@ public class EternalGoal : Goal
 {
     private int _completedTimes;
     private const int _bonus = 200;
+    public override bool IsComplete()
+    {
+        return false;
+    }
     public EternalGoal(string shortName, string description, int points)
         : base(shortName, description, points)
     {
@@ -19,10 +23,10 @@ public class EternalGoal : Goal
             Console.WriteLine($"Bonus unlocked! You received {_bonus} extra points!");
         }
     }
-    public override bool IsComplete()
-    {
-        return false;
-    }
+    
+    
+    
+    
     public override string GetStringRepresentation()
     {
         return $"EternalGoal~{GetName()}~{Getdescription()}~{GetPoints()}~{_completedTimes}";
